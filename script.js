@@ -77,6 +77,13 @@
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+
+  const onlineConsultationHero = document.getElementById('onlineConsultationHero');
+  onlineConsultationHero?.addEventListener('click', () => {
+    const onlineVideo = document.querySelector('input[name="consultationMode"][value="Online - Video"]');
+    if (onlineVideo) onlineVideo.checked = true;
+  });
+
   const form = document.getElementById('appointmentForm');
   const status = document.getElementById('formStatus');
 
@@ -89,6 +96,7 @@
     const date = document.getElementById('date').value;
     const time = document.getElementById('time').value;
     const contactMode = document.getElementById('contactMode').value;
+    const consultationMode = document.querySelector('input[name="consultationMode"]:checked')?.value || 'In-clinic';
     const consent = document.getElementById('consent').checked;
 
     if (!name || !mobile || !service || !date || !time || !consent) {
@@ -112,6 +120,7 @@ Mobile: ${mobile}
 Consultation for: ${service}
 Preferred date: ${date}
 Preferred time: ${time}
+Consultation mode: ${consultationMode}
 Preferred contact: ${contactMode}
 
 Please confirm availability.`;

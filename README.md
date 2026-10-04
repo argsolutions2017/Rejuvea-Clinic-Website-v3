@@ -90,3 +90,31 @@ This project is suitable for static deployment on Cloudflare Pages or Workers St
 - Google Maps / Get Directions links updated to the confirmed Rejuvea Skin & Hair Clinic location.
 - `robots.txt` points to `https://rejuveawellness.com/sitemap.xml`.
 - `sitemap.xml` now contains the production URLs.
+
+
+## ARG Digital Technologies footer update
+- Added a compact, responsive Digital Technology Partner panel to the home-page footer.
+- Added ARG Digital Technologies logo without changing the existing Rejuvea footer structure.
+- Added website-enquiry links for WhatsApp, phone and LinkedIn.
+- The panel stacks cleanly on mobile so it does not break the existing responsive layout.
+
+
+## Footer Option 2 implementation
+- Replaced the large ARG partner card with the approved compact Option 2 layout.
+- Added Digital Partner beside the existing footer navigation links.
+- Kept a small ARG logo, short services line, WhatsApp, Call and LinkedIn links.
+- Preserved responsive behavior and all existing Rejuvea production settings.
+
+
+## Footer Option 2 CSS correction
+- Fixed an escaped-newline serialization issue that prevented the Option 2 CSS rules from being parsed by the browser.
+- Reduced the ARG logo to a compact 175px desktop width.
+- Verified the footer layout in a real Chromium render before packaging.
+
+
+## Online consultation update
+- Added `Online Consultation — Available — By Appointment` beside the hero `Book Consultation` CTA.
+- Added Consultation Mode selection in the appointment form: In-clinic, Online - Video, Online - Phone.
+- Clicking the hero online-consultation CTA preselects `Online - Video`; the patient can change it in the form.
+- The selected consultation mode is included in the WhatsApp appointment message.
+- No online-consultation label or badge was added to the Doctor profile section.

@@ -97,7 +97,13 @@
 
           <div class="hero-actions">
             <a class="btn" href="#appointment">Book Consultation <span>→</span></a>
-            <a class="btn btn-outline" href="#procedures">Explore Procedures <span>→</span></a>
+            <a class="btn btn-outline online-consult-btn" href="#appointment" id="onlineConsultationHero">
+              <span class="online-consult-icon" aria-hidden="true">▣</span>
+              <span class="online-consult-copy">
+                <strong>Online Consultation</strong>
+                <small>Available — By Appointment</small>
+              </span>
+            </a>
           </div>
 
           <div class="benefit-row" aria-label="Clinic focus areas">
@@ -319,6 +325,25 @@
             </label>
           </div>
 
+          <fieldset class="consultation-mode-group">
+            <legend>Consultation Mode</legend>
+            <div class="consultation-mode-options">
+              <label class="mode-option">
+                <input type="radio" name="consultationMode" value="In-clinic" checked />
+                <span>In-clinic</span>
+              </label>
+              <label class="mode-option">
+                <input type="radio" name="consultationMode" value="Online - Video" />
+                <span>Online - Video</span>
+              </label>
+              <label class="mode-option">
+                <input type="radio" name="consultationMode" value="Online - Phone" />
+                <span>Online - Phone</span>
+              </label>
+            </div>
+            <small class="online-mode-note">Online Consultation Available — By Appointment</small>
+          </fieldset>
+
           <div class="field-row">
             <label>
               <span>Preferred Time</span>
@@ -388,23 +413,34 @@
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-grid">
-      <a class="footer-brand" href="index.html#home" aria-label="Back to Rejuvea home">
-        <img src="assets/rejuvea-logo.webp" alt="Rejuvea" />
-        <p>Skin & Hair Clinic | Diet & Nutrition Center</p>
+  <footer class="site-footer option2-footer">
+    <div class="container footer-option2-grid">
+      <a class="footer-brand footer-brand-option2" href="index.html#home" aria-label="Back to Rejuvea home">
+        <img src="assets/rejuvea-logo.webp" alt="Rejuvea Skin & Hair Clinic" />
+        <p>Skin &amp; Hair Clinic | Diet &amp; Nutrition Center</p>
       </a>
-      <div class="footer-links">
+      <nav class="footer-nav-option2" aria-label="Footer navigation">
         <a href="#about">Doctor</a>
         <a href="#concerns">Concerns</a>
         <a href="#procedures">Procedures</a>
         <a href="#nutrition">Nutrition</a>
         <a href="#contact">Contact</a>
         <a href="privacy.html">Privacy</a>
+        <a class="digital-partner-link" href="https://www.linkedin.com/in/arg-digital-technologies-425138441/" target="_blank" rel="noopener noreferrer">Digital Partner</a>
+      </nav>
+      <div class="footer-partner-option2">
+        <span class="partner-kicker">Digital Technology Partner</span>
+        <img src="assets/arg-digital-technologies.webp" alt="ARG Digital Technologies" loading="lazy" />
+        <p>Websites · Business Applications · AI &amp; Automation</p>
+        <div class="partner-actions-option2" aria-label="ARG Digital Technologies contact links">
+          <a href="https://wa.me/918788950963" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="tel:+918788950963">Call +91 87889 50963</a>
+          <a href="https://www.linkedin.com/in/arg-digital-technologies-425138441/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
       </div>
     </div>
-    <div class="container footer-bottom">
-      <span>© <span id="year"></span> Rejuvea Skin & Hair Clinic. All rights reserved.</span>
+    <div class="container footer-bottom footer-bottom-option2">
+      <span>© <span id="year"></span> Rejuvea Skin &amp; Hair Clinic. All rights reserved.</span>
       <span>Yavatmal, Maharashtra</span>
     </div>
   </footer>
